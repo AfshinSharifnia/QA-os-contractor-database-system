@@ -8,6 +8,8 @@
 # testing
 /coverage
 tests-examples
+,github
+
 # .github
 
 # production
