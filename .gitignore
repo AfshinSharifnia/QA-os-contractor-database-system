@@ -12,6 +12,15 @@ ui-automation-playwright
 /test-results/
 ui-automation-playwright/playwright-report/
 ui-automation-playwright/playwright/.cache/
+tests-examples
+playwright-report
+playwright-report/index.html
+
+
+
+
+
+# .github
 
 # production
 /build
@@ -31,4 +40,3 @@ yarn-error.log*
 node_modules
 
 /.env
-node_modules
