@@ -8,4 +8,6 @@ test("login validation", async ({ page }) => {
   await page.getByPlaceholder("Password...").click();
   await page.getByPlaceholder("Password...").fill("123456");
   await page.getByRole("button", { name: "Login" }).click();
+  await page.waitForTimeout(2000);
+  await page.getByRole("button", { name: "Login" }).click();
 });
