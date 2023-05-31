@@ -4,7 +4,6 @@ test("validate registration", async ({ page }) => {
   await page.goto("about:blank");
   await page.goto("http://localhost:3000/");
   await page.getByText("Log In Or Sign Up").click();
-  await page.getByText("Don't have an account?Register").click();
   await page.getByRole("button", { name: "Register" }).click();
   await page.getByPlaceholder("Email...").click();
   await page.getByPlaceholder("Email...").fill("qa@qa.com");
