@@ -6,7 +6,12 @@
 .pnp.js
 
 # testing
+ui-automation-playwright
 /coverage
+/ui-automation-playwright/node_modules/
+/test-results/
+ui-automation-playwright/playwright-report/
+ui-automation-playwright/playwright/.cache/
 tests-examples
 playwright-report
 playwright-report/index.html
@@ -35,6 +40,3 @@ yarn-error.log*
 node_modules
 
 /.env
-/test-results/
-/playwright-report/
-/playwright/.cache/
