@@ -16,7 +16,7 @@ module.exports = defineConfig({
   /* Run tests in files in parallel */
   timeout: 10 * 1000,
   expect: {
-    timeout: 2000,
+    timeout: 5000,
   },
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -30,6 +30,13 @@ module.exports = defineConfig({
   reporter: "html",
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    video: "on",
+    // video: "off",
+    // video: "retain-on-failure",
+    // vide0: "on-first-retry",
+    launchOptions: {
+      slowMo: 2000,
+    },
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
